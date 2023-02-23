@@ -325,7 +325,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888896760}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 634243fac9581354e9e2ce72539146b9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 2053047675}
   - component: {fileID: 2053047674}
   - component: {fileID: 2053047673}
+  - component: {fileID: 2053047678}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -506,3 +507,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053047678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053047672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d3a54c4b7dd0d41b075934e4bb2793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2053047673}
+  forwardForce: 1000
+  sidewaysForce: 600
