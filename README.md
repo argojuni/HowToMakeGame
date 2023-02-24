@@ -1,3 +1,1 @@
-# HowToMakeGame
-
-HowToMake first Game
+# Mini Game
