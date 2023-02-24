@@ -9,22 +9,31 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
 
+    public Animator cubeMove;
+
+    void Start()
+    {
+        cubeMove = GetComponent<Animator>();    
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
         rb.AddForce(0,0,forwardForce * Time.deltaTime);
+        cubeMove.SetBool("stopMove", false);
 
         if (Input.GetKey("d"))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            cubeMove.SetBool("stopMove",true);
         }
 
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            cubeMove.SetBool("stopMove",true);
         }
 
-        if(rb.position.y < -1)
+        if (rb.position.y < -1)
         {
             FindObjectOfType<GameManager>().EndGame();
         }

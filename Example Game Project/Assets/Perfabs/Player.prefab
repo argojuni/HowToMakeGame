@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3043381241228644052}
   - component: {fileID: 3043381241228644051}
   - component: {fileID: 3043381241228644050}
+  - component: {fileID: 1229402543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -129,6 +130,7 @@ MonoBehaviour:
   rb: {fileID: 3043381241228644052}
   forwardForce: 8000
   sidewaysForce: 120
+  cubeMove: {fileID: 1229402543}
 --- !u!114 &3043381241228644050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,4 +144,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 3043381241228644051}
-  gameManager: {fileID: 0}
+--- !u!95 &1229402543
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043381241228644053}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 446e2c60c09883049a0cc4b7bcd0170c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
