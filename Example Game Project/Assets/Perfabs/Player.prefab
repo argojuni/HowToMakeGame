@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 3043381241228644051}
+  Player: {fileID: 3043381241228644052}
 --- !u!95 &1229402543
 Animator:
   serializedVersion: 3
