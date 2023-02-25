@@ -20,11 +20,12 @@ public class Score : MonoBehaviour
     {
         float number = (int)player.position.z;
         scoreText.text = number.ToString("0");
-        highScore = scoreText.text;
-        if(number > PlayerPrefs.GetFloat("HighScore", 0))
+        if (number > PlayerPrefs.GetFloat("HighScore", 0))
         {
             PlayerPrefs.SetFloat("HighScore", number);
             highScoreText.text = number.ToString("0");
         }
+        highScore = highScoreText.text;
+
     }
 }
